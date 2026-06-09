@@ -36,11 +36,11 @@ M_powerlaw = (dt**(beta - 1)) * ((term1 - term2) / gamma(beta + 1))
 # 4. Plotting
 fig, ax = plt.subplots(figsize=(10, 6))
 
-ax.plot(t, M_exp, label='Exponential Decay (Eq 8)', lw=2.5, color='#1f77b4')
-ax.plot(t, M_shift, label='Shifted Heaviside (Eq 9)', lw=2.5, color='#ff7f0e')
-ax.plot(t, M_bandpass, label='Bandpass Heaviside (Eq 10)', lw=2.5, color='#2ca02c', linestyle='--')
-ax.plot(t, M_gamma, label='Gamma Distribution (Eq 11)', lw=2.5, color='#d62728', linestyle=':')
-ax.plot(t, M_powerlaw, label='Power-Law (Eq 12)', lw=2.5, color='#9467bd')
+ax.plot(t, M_exp, label='Exponential Decay (Eq A1)', lw=2.5, color='#1f77b4')
+ax.plot(t, M_shift, label='Shifted Heaviside (Eq A2)', lw=2.5, color='#ff7f0e')
+ax.plot(t, M_bandpass, label='Bandpass Heaviside (Eq A3)', lw=2.5, color='#2ca02c', linestyle='--')
+ax.plot(t, M_gamma, label='Gamma Distribution (Eq A4)', lw=2.5, color='#d62728', linestyle=':')
+ax.plot(t, M_powerlaw, label='Power-Law (Eq A5)', lw=2.5, color='#9467bd')
 
 # Mark the specific thresholds for clarity
 ax.axvline(tau_d, color='gray', linestyle=':', label=r'Latency ($\tau_d$)')
