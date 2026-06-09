@@ -55,7 +55,7 @@ ax.set_xlim(10, 0)     # Ensure X-axis goes from 10 on the left to 0 on the righ
 
 ax.set_xlabel('Time Before Present ($t_n - t_j$)', fontsize=12)
 ax.set_ylabel('Memory Weight ($M_i$)', fontsize=12)
-ax.set_title('Comparison of Memory Kernels', fontsize=14, pad=15)
+ax.set_title('Different Types of Memory Kernels', fontsize=14, pad=15)
 ax.grid(True, alpha=0.3)
 ax.legend(loc='upper left', framealpha=0.9)
 
